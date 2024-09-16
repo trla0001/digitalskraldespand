@@ -1,15 +1,121 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
-import Link from '../components/Link.astro';
-import { Image } from 'astro:assets';
-import thumbsup from "../assets/images/thumbsup.png";
+import Button from "../components/Button.astro";
+import Link from "../components/Link.astro";
+import { Image } from "astro:assets";
+import brev from "../assets/images/brev.svg";
+import computer from "../assets/images/computer.svg";
+import floejter from "../assets/images/floejter.svg";
+import mapper from "../assets/images/mapper.svg";
+import mobil from "../assets/images/mobil.svg";
+import peger from "../assets/images/peger.svg";
+import ressourcer from "../assets/images/ressourcer.svg";
+import surfer from "../assets/images/surfer.svg";
+import venner from "../assets/images/venner.svg";
+import menu_bg from "../assets/images/menu_bg.svg";
+import footer_bg from "../assets/images/footer_bg.svg";
+import devider1 from "../assets/images/devider1.svg";
+import devider2 from "../assets/images/devider2.svg";
 ---
+
 <MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
-	</article>
+  <section>
+    <Image src={menu_bg} alt="" />
+    <article class="grid md:grid-cols-2 items-center">
+      <div>
+        <Image src={surfer} alt="" />
+      </div>
+      <div>
+        <h1>Digital Skraldedag</h1>
+        <h2>Den 15 marts 2025</h2>
+        <Link href="https://www.kea.dk" target="_blank">Registrer dit bidrag</Link>
+      </div>
+    </article>
+  </section>
+
+  <section>
+    <Image src={floejter} alt="" />
+    <h2>Hvad er digital skrald?</h2>
+    <p>Digital Skraldedag er en dag dedikeret til at rydde op i vores digitale liv, ligesom vi rydder op i vores fysiske miljø på World Cleanup Day. Nu i sit femte år, og organiseret af Let's Do It World, har Digital Skraldedag til formål at øge bevidstheden om digital forurening og opfordre enkeltpersoner og virksomheder til at rydde op og omstrukturere deres online tilstedeværelse.</p>
+    <Image src={devider1} alt="" />
+  </section>
+
+  <section>
+    <Image src={peger} alt="" />
+    <h2>Vidste du at...</h2>
+    <ul>
+      <li>Internettet producerer mere end 900 millioner tons CO2 hvert år! (a), (b), (c), (d)</li>
+      <li>99% af al data blev skabt inden for de sidste 10 år. (a)</li>
+      <li>En enkelt e-mail udleder i gennemsnit 4 g CO2 = det samme som et lys tændt i 6 minutter! (a), (b), (c)</li>
+      <li>320 milliarder e-mails sendes hver dag, og 62 billioner spam-mails hvert år = 20 millioner tons CO2! (a), (b)</li>
+      <li>90% af alle data tilgås aldrig efter 3 måneder, når de er gemt. (a)</li>
+      <li>Den grænseløse forbrug af data i dag kræver 3 gange mere energi end alle verdens solpaneler kan producere! (a)</li>
+    </ul>
+    <Image src={devider2} alt="" />
+  </section>
+
+  <section>
+    <h2>Hvordan gør du?</h2>
+    <article>
+      <Image src={mobil} alt="" />
+      <h3>Trin 1</h3>
+      <p>Ryd op på din smartphone ved at fjerne apps, du ikke har brugt i længere tid, og slet gamle, ubrugte apps og spil. Husk også at slette gamle brugerkonti og data, som du ikke har tilgået i mange år. Dette vil forbedre din telefons hastighed og batterilevetid. Gennemgå dine fotos og videoer, og slet dubletter og unødvendige filer for at frigøre værdifuld opbevaringsplads. Se retningslinjerne for, hvordan du rydder op på din smartphone og tablet.</p>
+    </article>
+    <article>
+      <Image src={computer} alt="" />
+      <h3>Trin 2</h3>
+      <p>Ryd op på din computer ved at slette dubletter og ubrugelige filer, inklusive slørede fotos og set videoer. Arkiver vigtige filer og vær klar til at opdage interessante ting. Se retningslinjerne for, hvordan du rydder op på din computer og harddisk.</p>
+    </article>
+    <article>
+      <Image src={brev} alt="" />
+      <h3>Trin 3</h3>
+      <p>Ryd op i din postkasse ved at arkivere gamle e-mails, afmelde nyhedsbreve, og slette lange samtaler, undtagen den nyeste. Saml og slet lignende e-mails for at gøre opgaven lettere. Se retningslinjerne for, hvordan du rydder op i din postkasse.</p>
+    </article>
+    <article>
+      <Image src={mapper} alt="" />
+      <h3>Trin 3</h3>
+      <p>Lav nye ordninger ved at bruge co-working steder i stedet for at sende unødvendige e-mails. Opbevar vigtige filer i én cloud og vær bevidst om, hvad du sikkerhedskopierer. Lav mindre 'hurtigt indhold' og vær selektiv med dine videoer og fotos. Små ændringer i dine internetvaner kan betydeligt reducere dit miljøaftryk. Vær kreativ og lev let!</p>
+    </article>
+    <Image src={devider1} alt="" />
+  </section>
+
+  <section>
+    <h2>Inviter en ven</h2>
+    <p>Fællesskab gør os stærkere. Når vi deler ansvarlighed med dem omkring os, kan vi skabe større forandringer og en bæredygtig fremtid. Ved at invitere en ven til at deltage i Digital Skraldedag, hjælper du med at sprede bevidstheden om digital forurening og reducerer vores fælles klimaaftryk. Sammen kan vi rydde op i vores digitale verden – én handling ad gangen. Tag første skridt mod en grønnere fremtid, og inviter en ven i dag!</p>
+    <Image src={venner} alt="" />
+    <Link href="https://www.kea.dk" target="_blank">Inviter her</Link>
+    <Image src={devider2} alt="" />
+  </section>
+
+  <section>
+    <h2>Registrer dit bidrag</h2>
+    <p>Siden 2020 har <span class="">175 forskellige lande</span> og territorier deltaget i Digital Skraldedag. Næsten <span class="">1,2 millioner</span> mennesker har slettet over <span class="">14,5 millioner GB data</span>, hvilket har forhindret den årlige produktion af omkring <span class="">3.625 tons CO2</span>*.</p>
+    <p>Skal DU også være med?</p>
+    <Image src={floejter} alt="" />
+    <form action="">
+      <Button>Klik!</Button>
+    </form>
+    <Image src={devider1} alt="" />
+  </section>
+
+  <section>
+    <div>
+      <h2>Ressourcer og materialer</h2>
+      <p>Her finder du vejledninger, værktøjer og materialer, der hjælper dig med at tage ansvar for din digitale oprydning. Uanset om du er enkeltperson, virksomhed, skole eller kommune, har vi samlet alt, du behøver for at reducere dit digitale fodaftryk og bidrage til en mere bæredygtig fremtid i nedstående links.</p>
+      <Link href="https://www.kea.dk" target="_blank">Retningslinjer for enkeltpersoner</Link>
+      <Link href="https://www.kea.dk" target="_blank">Retningslinjer for virksomheder</Link>
+      <Link href="https://www.kea.dk" target="_blank">Retningslinjer for skoler</Link>
+      <Link href="https://www.kea.dk" target="_blank">Retningslinjer for kommuner</Link>
+      <Link href="https://www.kea.dk" target="_blank">Sådan rydder du op på din computer og i din Drive</Link>
+      <Link href="https://www.kea.dk" target="_blank">Sådan rydder du op i dine e-mails</Link>
+      <Link href="https://www.kea.dk" target="_blank">Sådan rydder du op på din smart- phone og tablet</Link>
+      <Link href="https://www.kea.dk" target="_blank">Deltagerdataindsamling 1</Link>
+      <Link href="https://www.kea.dk" target="_blank">Deltagerdataindsamling 2</Link>
+      <Link href="https://www.kea.dk" target="_blank">Markedsføringsmaterialer</Link>
+    </div>
+    <div>
+      <Image src={ressourcer} alt="" />
+    </div>
+    <Image src={footer_bg} alt="" />
+  </section>
 </MainLayout>
