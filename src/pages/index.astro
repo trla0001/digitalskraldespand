@@ -12,7 +12,6 @@ import peger from "../assets/images/peger.svg";
 import ressourcer from "../assets/images/ressourcer.svg";
 import surfer from "../assets/images/surfer.svg";
 import venner from "../assets/images/venner.svg";
-import menu_bg from "../assets/images/menu_bg.svg";
 import footer_bg from "../assets/images/footer_bg.svg";
 import devider1 from "../assets/images/devider1.svg";
 import devider2 from "../assets/images/devider2.svg";
@@ -20,22 +19,26 @@ import devider2 from "../assets/images/devider2.svg";
 
 <MainLayout title="Titel">
   <section class="grid md:grid-cols-2">
-    <Image class="relative col-span-2" src={menu_bg} alt="" />
+    <picture class="md:col-span-2">
+      <source media="(min-width:780px)" srcset="/bg/menu_bg.svg" width="1920" />
+      <img src="/bg/mobile_menu_bg.svg" alt="" width="790" height="850" />
+    </picture>
+
     <div class="mx-5 mt-4 grid md:grid-cols-2 items-center absolute">
       <Image class="md:col-start-1" src={surfer} alt="" />
-      <article class="grid md:col-start-2 md:justify-center gap-3 md:text-center">
-        <h1 class="text-7xl">Digital Skraldedag</h1>
-        <h2 class="text-5xl">Den 15 marts 2025</h2>
+      <article class="grid md:col-start-2 md:justify-center gap-3 text-center pt-4">
+        <h1 class="text-5xl md:text-7xl">Digital Skraldedag</h1>
+        <h2 class="text-4xl md:text-5xl">Den 15 marts 2025</h2>
         <Link href="https://www.kea.dk" target="_blank">Registrer dit bidrag</Link>
       </article>
     </div>
   </section>
 
-  <section class="mt-28">
+  <section class="mt-96 md:mt-28">
     <div class="mx-5 lg:mx-[120px] grid md:grid-cols-2 lg:items-center">
       <Image class="w-56 lg:w-80 m-auto pb-4 lg:order-2" src={floejter} alt="" />
       <div>
-        <h2 class="pb-6">Hvad er digital skrald?</h2>
+        <h2 class="pb-6 text-4xl md:text-5xl">Hvad er digital skrald?</h2>
         <p>Digital Skraldedag er en dag dedikeret til at rydde op i vores digitale liv, ligesom vi rydder op i vores fysiske miljø på World Cleanup Day. Nu i sit femte år, og organiseret af Let's Do It World, har Digital Skraldedag til formål at øge bevidstheden om digital forurening og opfordre enkeltpersoner og virksomheder til at rydde op og omstrukturere deres online tilstedeværelse.</p>
       </div>
     </div>
