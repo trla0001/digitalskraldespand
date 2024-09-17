@@ -1,5 +1,9 @@
 ---
 // Henter parametrene fra Astro.props
-const { href="#", target="_self"} = Astro.props; 
+const { href="#", text="_self"} = Astro.props; 
 ---
-<a href={href} class="underline" target={target}><slot /></a>
+<!-- <a href={href} class="underline" target={target}><slot /></a> -->
+
+<a href={href} class="text-[#2C621F] underline transition-colors duration-300 ease-in-out hover:text-[#5DBF45] active:text-[#1C4214]">
+  {text}
+</a>
