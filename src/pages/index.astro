@@ -23,7 +23,6 @@ import devider2 from "../assets/images/devider2.svg";
       <source media="(min-width:780px)" srcset="/bg/menu_bg.svg" width="1920" />
       <img src="/bg/mobile_menu_bg.svg" alt="" width="790" height="850" />
     </picture>
-
     <div class="mx-5 mt-4 grid md:grid-cols-2 items-center absolute">
       <Image class="md:col-start-1" src={surfer} alt="" />
       <article class="grid md:col-start-2 md:justify-center gap-3 text-center pt-4">
@@ -34,23 +33,23 @@ import devider2 from "../assets/images/devider2.svg";
     </div>
   </section>
 
-  <section class="mt-96 md:mt-28">
+  <section class="mt-28">
     <div class="mx-5 lg:mx-[120px] grid md:grid-cols-2 lg:items-center">
       <Image class="w-56 lg:w-80 m-auto pb-4 lg:order-2" src={floejter} alt="" />
       <div>
         <h2 class="pb-6 text-4xl md:text-5xl">Hvad er digital skrald?</h2>
-        <p>Digital Skraldedag er en dag dedikeret til at rydde op i vores digitale liv, ligesom vi rydder op i vores fysiske miljø på World Cleanup Day. Nu i sit femte år, og organiseret af Let's Do It World, har Digital Skraldedag til formål at øge bevidstheden om digital forurening og opfordre enkeltpersoner og virksomheder til at rydde op og omstrukturere deres online tilstedeværelse.</p>
+        <p class="prose">Digital Skraldedag er en dag dedikeret til at rydde op i vores digitale liv, ligesom vi rydder op i vores fysiske miljø på World Cleanup Day. Nu i sit femte år, og organiseret af Let's Do It World, har Digital Skraldedag til formål at øge bevidstheden om digital forurening og opfordre enkeltpersoner og virksomheder til at rydde op og omstrukturere deres online tilstedeværelse.</p>
       </div>
     </div>
     <Image class="mt-28" src={devider1} alt="" />
   </section>
 
   <section class="mt-28">
-    <div class="lg:mx-[120px] grid md:grid-cols-3 items-center">
+    <div class="mx-5 lg:mx-[120px] grid md:grid-cols-3 items-center">
       <Image class="w-56 lg:w-80 m-auto pb-4" src={peger} alt="" />
-      <h2 class="mx-5 pb-6 text-5xl">Vidste du at...</h2>
+      <h2 class="pb-6 text-5xl">Vidste du at...</h2>
     </div>
-    <ul class="mx-5 lg:mx-[120px] list-disc grid md:grid-cols-2 gap-x-8">
+    <ul class="mx-8 lg:mx-[180px] list-disc grid md:grid-cols-2 gap-x-8">
       <li class="pb-10">Internettet producerer mere end 900 millioner tons CO2 hvert år! (a), (b), (c), (d)</li>
       <li class="pb-10">99% af al data blev skabt inden for de sidste 10 år. (a)</li>
       <li class="pb-10">En enkelt e-mail udleder i gennemsnit 4 g CO2 = det samme som et lys tændt i 6 minutter! (a), (b), (c)</li>
@@ -58,13 +57,13 @@ import devider2 from "../assets/images/devider2.svg";
       <li class="pb-10">90% af alle data tilgås aldrig efter 3 måneder, når de er gemt. (a)</li>
       <li>Den grænseløse forbrug af data i dag kræver 3 gange mere energi end alle verdens solpaneler kan producere! (a)</li>
     </ul>
-    <Image class="mt-28" src={devider2} alt="" />
   </section>
+  <Image class="mt-28" src={devider2} alt="" />
 
   <section class="mt-28">
     <h2 class="mx-5 lg:mx-[120px] text-5xl">Hvordan gør du?</h2>
     <article class="mx-5 lg:mx-[120px] mt-28 md:mt-4 grid md:grid-cols-2 md:items-center">
-      <div class="order-2"><Image class="w-64 lg:w-80 ml-auto" src={mobil} alt="" /></div>
+      <div class="md:order-2"><Image class="w-64 lg:w-80 ml-auto" src={mobil} alt="" /></div>
       <div>
         <h3 class="text-3xl">Trin 1</h3>
         <p class="prose">Ryd op på din smartphone ved at fjerne apps, du ikke har brugt i længere tid, og slet gamle, ubrugte apps og spil. Husk også at slette gamle brugerkonti og data, som du ikke har tilgået i mange år. Dette vil forbedre din telefons hastighed og batterilevetid. Gennemgå dine fotos og videoer, og slet dubletter og unødvendige filer for at frigøre værdifuld opbevaringsplads. Se retningslinjerne for, hvordan du rydder op på din smartphone og tablet.</p>
@@ -80,7 +79,7 @@ import devider2 from "../assets/images/devider2.svg";
     </article>
 
     <article class="mx-5 lg:mx-[120px] mt-28 grid md:grid-cols-2 md:items-center">
-      <div class="order-2"><Image class="w-64 lg:w-80 ml-auto" src={brev} alt="" /></div>
+      <div class="md:order-2"><Image class="w-64 lg:w-80 ml-auto" src={brev} alt="" /></div>
       <div>
         <h3 class="text-3xl">Trin 3</h3>
         <p class="prose">Ryd op i din postkasse ved at arkivere gamle e-mails, afmelde nyhedsbreve, og slette lange samtaler, undtagen den nyeste. Saml og slet lignende e-mails for at gøre opgaven lettere. Se retningslinjerne for, hvordan du rydder op i din postkasse.</p>
@@ -111,7 +110,7 @@ import devider2 from "../assets/images/devider2.svg";
 
   <section class="mt-28">
     <div class="mx-5 lg:mx-[120px] grid md:grid-cols-2">
-      <div class="order-2">
+      <div class="md:order-2">
         <h2 class="text-5xl pb-6">Registrer dit bidrag</h2>
         <p class="pb-2">Siden 2020 har <span class="font-bold">175 forskellige lande</span> og territorier deltaget i Digital Skraldedag. Næsten <span class="font-bold">1,2 millioner</span> mennesker har slettet over <span class="font-bold">14,5 millioner GB data</span>, hvilket har forhindret den årlige produktion af omkring <span class="font-bold">3.625 tons CO2</span>*.</p>
         <p>Skal DU også være med?</p>
