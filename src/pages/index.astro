@@ -182,10 +182,49 @@ import devider2 from "../assets/images/devider2.webp";
   </section>
 
   <Image class="mt-28" src={footer_bg} alt="" />
-
-  <style>
-    .bg {
-      background-color: #d6c8b8;
-    }
-  </style>
 </MainLayout>
+
+<style>
+  .bg {
+    background-color: #d6c8b8;
+  }
+</style>
+
+<script>
+  import { inView } from "motion";
+
+  const inviewelementet = document.querySelector(".bog_img");
+  inView(inviewelementet, () => {
+    inviewelementet.classList.add("fade-in-bottom");
+  });
+
+  const inviewelementet2 = document.querySelector(".om_bog");
+  inView(inviewelementet2, () => {
+    inviewelementet2.classList.add("fade-in-bottom");
+  });
+
+  const inviewelementet3 = document.querySelector(".bog_kap");
+  inView(inviewelementet3, () => {
+    inviewelementet3.classList.add("fade-in-bottom");
+  });
+
+  const inviewelementet4 = document.querySelector(".anmeldelser");
+  inView(inviewelementet4, () => {
+    inviewelementet4.classList.add("fade-in-bottom");
+  });
+
+  const inviewelementet5 = document.querySelector(".galleri");
+  inView(inviewelementet5, () => {
+    inviewelementet5.classList.add("fade-in-bottom");
+  });
+
+  const inviewelementet6 = document.querySelector(".om_forfatter");
+  inView(inviewelementet6, () => {
+    inviewelementet6.classList.add("fade-in-bottom");
+  });
+
+  const inviewelementet7 = document.querySelector(".formular");
+  inView(inviewelementet7, () => {
+    inviewelementet7.classList.add("fade-in-bottom");
+  });
+</script>
