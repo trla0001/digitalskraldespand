@@ -16,6 +16,7 @@ import footer_bg from "../assets/images/footer_bg.webp";
 import devider1 from "../assets/images/devider1.webp";
 import devider2 from "../assets/images/devider2.webp";
 import taleboble from "../assets/images/taleboble.webp";
+import taleboble from "../assets/images/taleboble.svg";
 ---
 
 <MainLayout title="Digitalskraldespand">
@@ -111,16 +112,14 @@ import taleboble from "../assets/images/taleboble.webp";
 
   <section id="Registrerbidrag" class="max-w-7xl m-auto mt-28">
     <div class="mx-5 lg:mx-[120px] grid md:grid-cols-2">
-      <div class="relative md:order-2 grid items-center">
-        <Image class="relative z-0 w-full" src={taleboble} alt="" />
-        <div class="absolute z-10 text-center px-10">
-          <h2 class="text-[35px] md:text-[42px] pb-6 font-poetsen pr-3">Registrer dit bidrag</h2>
-          <p class="pb-2">Siden 2020 har <span class="font-bold">175 forskellige lande</span> og territorier deltaget i Digital Skraldedag. Næsten <span class="font-bold">1,2 millioner</span> mennesker har slettet over <span class="font-bold">14,5 millioner GB data</span>, hvilket har forhindret den årlige produktion af omkring <span class="font-bold">3.625 tons CO2</span>*.</p>
-          <p>Skal <span class="font-bold">DU</span> også være med?</p>
-        </div>
+      <div class="md:order-2">
+        <picture class="md:col-span-2">
+          <source media="(min-width:780px)" srcset="/bg/taleboble.webp" />
+          <img src="/bg/taleboble_mobil.webp" alt="" />
+        </picture>
       </div>
       <div>
-        <Image class="w-56 lg:w-96 mr-auto pt-12" src={ps_rydder_op} alt="" />
+        <Image class="w-56 lg:w-96 mr-auto" src={ps_rydder_op} alt="" />
       </div>
     </div>
 
@@ -189,9 +188,6 @@ import taleboble from "../assets/images/taleboble.webp";
   <style>
     .bg {
       background-color: #d6c8b8;
-    }
-    .bg_2 {
-      background-color: #89a074;
     }
   </style>
 </MainLayout>
