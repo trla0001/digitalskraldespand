@@ -18,10 +18,10 @@ import devider2 from "../assets/images/devider2.webp";
 ---
 
 <MainLayout title="Digitalskraldespand">
-  <section id="hero" class="grid md:grid-cols-2 mt-24">
+  <section class="grid md:grid-cols-2 mt-24">
     <picture class="md:col-span-2">
       <source media="(min-width:780px)" srcset="/bg/menu_bg.webp" width="1920" />
-      <img src="/bg/mobile_menu_bg.webp" alt="" width="790" height="850" />
+      <img src="/bg/mobile_menu_bg.webp" alt="" width="790" height="950" />
     </picture>
     <div class="mx-5 mt-4 grid md:grid-cols-2 items-center absolute">
       <Image class="md:col-start-1" src={ps_surger} alt="" />
@@ -190,11 +190,6 @@ import devider2 from "../assets/images/devider2.webp";
 
 <script>
   import { inView } from "motion";
-
-  const inviewelementet = document.querySelector("#hero");
-  inView(inviewelementet, () => {
-    inviewelementet.classList.add("fade-in-bottom");
-  });
 
   const inviewelementet2 = document.querySelector("#digitalskrald");
   inView(inviewelementet2, () => {
