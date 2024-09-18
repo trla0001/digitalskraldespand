@@ -15,6 +15,7 @@ import venner from "../assets/images/venner.svg";
 import footer_bg from "../assets/images/footer_bg.svg";
 import devider1 from "../assets/images/devider1.svg";
 import devider2 from "../assets/images/devider2.svg";
+import taleboble from "../assets/images/taleboble.svg";
 ---
 
 <MainLayout title="Digitalskraldespand">
@@ -28,7 +29,7 @@ import devider2 from "../assets/images/devider2.svg";
       <article class="grid md:col-start-2 md:justify-center gap-5 text-center pt-4">
         <h1 class="text-5xl md:text-7xl font-poetsen">Digital Skraldedag</h1>
         <h2 class="text-4xl md:text-5xl font-poetsen">Den 15 marts 2025</h2>
-        <div class="flex justify-center mt-10"><Link href="#registrerbidrag" target="_blank" variant="button">Registrer dit bidrag</Link></div>
+        <div class="flex justify-center md:mt-10"><Link href="#registrerbidrag" target="_blank" variant="button">Registrer dit bidrag</Link></div>
       </article>
     </div>
   </section>
@@ -50,12 +51,12 @@ import devider2 from "../assets/images/devider2.svg";
       <h2 class="pb-6 text-5xl font-poetsen">Vidste du at...</h2>
     </div>
     <ul class="mx-8 lg:mx-[180px] list-disc grid md:grid-cols-2 gap-x-8">
-      <li class="pb-10">Internettet producerer mere end 900 millioner tons CO2 hvert år! (a), (b), (c), (d)</li>
-      <li class="pb-10">99% af al data blev skabt inden for de sidste 10 år. (a)</li>
-      <li class="pb-10">En enkelt e-mail udleder i gennemsnit 4 g CO2 = det samme som et lys tændt i 6 minutter! (a), (b), (c)</li>
-      <li class="pb-10">320 milliarder e-mails sendes hver dag, og 62 billioner spam-mails hvert år = 20 millioner tons CO2! (a), (b)</li>
-      <li class="pb-10">90% af alle data tilgås aldrig efter 3 måneder, når de er gemt. (a)</li>
-      <li>Den grænseløse forbrug af data i dag kræver 3 gange mere energi end alle verdens solpaneler kan producere! (a)</li>
+      <li class="pb-10">Internettet producerer mere end 900 millioner tons CO2 hvert år!</li>
+      <li class="pb-10">99% af al data blev skabt inden for de sidste 10 år.</li>
+      <li class="pb-10">En enkelt e-mail udleder i gennemsnit 4 g CO2 = det samme som et lys tændt i 6 minutter!</li>
+      <li class="pb-10">320 milliarder e-mails sendes hver dag, og 62 billioner spam-mails hvert år = 20 millioner tons CO2!</li>
+      <li class="pb-10">90% af alle data tilgås aldrig efter 3 måneder, når de er gemt.</li>
+      <li>Den grænseløse forbrug af data i dag kræver 3 gange mere energi end alle verdens solpaneler kan producere!</li>
     </ul>
   </section>
   <Image class="mt-28" src={devider2} alt="" />
@@ -110,12 +111,17 @@ import devider2 from "../assets/images/devider2.svg";
 
   <section id="Registrerbidrag" class="max-w-7xl m-auto mt-28">
     <div class="mx-5 lg:mx-[120px] grid md:grid-cols-2">
-      <div class="md:order-2 bg_2">
-        <h2 class="text-5xl pb-6 font-poetsen">Registrer dit bidrag</h2>
-        <p class="pb-2">Siden 2020 har <span class="font-bold">175 forskellige lande</span> og territorier deltaget i Digital Skraldedag. Næsten <span class="font-bold">1,2 millioner</span> mennesker har slettet over <span class="font-bold">14,5 millioner GB data</span>, hvilket har forhindret den årlige produktion af omkring <span class="font-bold">3.625 tons CO2</span>*.</p>
-        <p>Skal DU også være med?</p>
+      <div class="relative md:order-2 grid items-center">
+        <Image class="relative z-0 w-full" src={taleboble} alt="" />
+        <div class="absolute z-10 text-center px-10">
+          <h2 class="text-[35px] md:text-[42px] pb-6 font-poetsen pr-3">Registrer dit bidrag</h2>
+          <p class="pb-2">Siden 2020 har <span class="font-bold">175 forskellige lande</span> og territorier deltaget i Digital Skraldedag. Næsten <span class="font-bold">1,2 millioner</span> mennesker har slettet over <span class="font-bold">14,5 millioner GB data</span>, hvilket har forhindret den årlige produktion af omkring <span class="font-bold">3.625 tons CO2</span>*.</p>
+          <p>Skal <span class="font-bold">DU</span> også være med?</p>
+        </div>
       </div>
-      <div><Image class="w-56 lg:w-96 mr-auto pt-12" src={floejter} alt="" /></div>
+      <div>
+        <Image class="w-56 lg:w-96 mr-auto pt-12" src={floejter} alt="" />
+      </div>
     </div>
 
     <form action="" class="mx-5 lg:mx-[220px]">
@@ -154,37 +160,38 @@ import devider2 from "../assets/images/devider2.svg";
       </div>
       <div class="flex justify-center"><Button variant="button">Registrer dit bidrag</Button></div>
     </form>
+
+    <Image class="mt-28" src={devider1} alt="" />
+
+    <section class="max-w-7xl m-auto mt-28 mx-5 lg:mx-[120px] grid md:grid-cols-2">
+      <div>
+        <h2 class="text-5xl pb-6 font-poetsen">Ressourcer og materialer</h2>
+        <p>Her finder du vejledninger, værktøjer og materialer, der hjælper dig med at tage ansvar for din digitale oprydning. Uanset om du er enkeltperson, virksomhed, skole eller kommune, har vi samlet alt, du behøver for at reducere dit digitale fodaftryk og bidrage til en mere bæredygtig fremtid i nedstående links.</p>
+        <ul class="pt-4">
+          <li><Link href="https://drive.google.com/file/d/1LZAIsGLSJl7fOdqdp53YscYc0XTd2xv3/view" target="_blank" variant="link">Retningslinjer for enkeltpersoner</Link></li>
+          <li><Link href="https://drive.google.com/file/d/1ZUIJl_EztcJmYF7GVDFN1LMPRtqM_7nM/view" target="_blank" variant="link">Retningslinjer for virksomheder</Link></li>
+          <li><Link href="https://drive.google.com/file/d/1dDw_YexhYGTxQIKMqcLMLnyekOTkTpJ0/view" target="_blank" variant="link">Retningslinjer for skoler</Link></li>
+          <li><Link href="https://drive.google.com/file/d/1MRiPX57JrppZY4gwtKeKeCc0_rZX040P/view" target="_blank" variant="link">Retningslinjer for kommuner</Link></li>
+          <li><Link href="https://drive.google.com/file/d/1i8rKagvbCXk4JciaEg896YUUti3bjLbU/view" target="_blank" variant="link">Sådan rydder du op på din computer og i din Drive</Link></li>
+          <li><Link href="https://drive.google.com/file/d/1Capnwt-idzQoVtV1jNTM2HeJnvYVNQIi/view" target="_blank" variant="link">Sådan rydder du op i dine e-mails</Link></li>
+          <li><Link href="https://drive.google.com/file/d/1fN0bgV8R1WAirubd_1QlSH17lYHt6eE_/view" target="_blank" variant="link">Sådan rydder du op på din smart- phone og tablet</Link></li>
+          <li><Link href="https://docs.google.com/spreadsheets/d/1LvTHVLLRsCICSQ-FMwtqy1whl1PlQFKy/edit?gid=631660431#gid=631660431" target="_blank" variant="link">Deltagerdataindsamling 1</Link></li>
+          <li><Link href="https://docs.google.com/spreadsheets/d/1k56qMJsp3zgDhlsCngBhdjaSHP_z9TqM/edit?gid=464700726#gid=464700726" target="_blank" variant="link">Deltagerdataindsamling 2</Link></li>
+          <li><Link href="https://trello.com/b/YzROvY3M/digital-cleanup-day" target="_blank" variant="link">Markedsføringsmaterialer</Link></li>
+        </ul>
+      </div>
+      <div class="md:self-end"><Image class="w-56 md:w-96 m-auto pt-12" src={ressourcer} alt="" /></div>
+    </section>
+
+    <Image class="mt-28" src={footer_bg} alt="" />
+
+    <style>
+      .bg {
+        background-color: #d6c8b8;
+      }
+      .bg_2 {
+        background-color: #89a074;
+      }
+    </style>
   </section>
-  <Image class="mt-28" src={devider1} alt="" />
-
-  <section class="max-w-7xl m-auto mt-28 mx-5 lg:mx-[120px] grid md:grid-cols-2">
-    <div>
-      <h2 class="text-5xl pb-6 font-poetsen">Ressourcer og materialer</h2>
-      <p>Her finder du vejledninger, værktøjer og materialer, der hjælper dig med at tage ansvar for din digitale oprydning. Uanset om du er enkeltperson, virksomhed, skole eller kommune, har vi samlet alt, du behøver for at reducere dit digitale fodaftryk og bidrage til en mere bæredygtig fremtid i nedstående links.</p>
-      <ul class="pt-4">
-        <li><Link href="https://drive.google.com/file/d/1LZAIsGLSJl7fOdqdp53YscYc0XTd2xv3/view" target="_blank" variant="link">Retningslinjer for enkeltpersoner</Link></li>
-        <li><Link href="https://drive.google.com/file/d/1ZUIJl_EztcJmYF7GVDFN1LMPRtqM_7nM/view" target="_blank" variant="link">Retningslinjer for virksomheder</Link></li>
-        <li><Link href="https://drive.google.com/file/d/1dDw_YexhYGTxQIKMqcLMLnyekOTkTpJ0/view" target="_blank" variant="link">Retningslinjer for skoler</Link></li>
-        <li><Link href="https://drive.google.com/file/d/1MRiPX57JrppZY4gwtKeKeCc0_rZX040P/view" target="_blank" variant="link">Retningslinjer for kommuner</Link></li>
-        <li><Link href="https://drive.google.com/file/d/1i8rKagvbCXk4JciaEg896YUUti3bjLbU/view" target="_blank" variant="link">Sådan rydder du op på din computer og i din Drive</Link></li>
-        <li><Link href="https://drive.google.com/file/d/1Capnwt-idzQoVtV1jNTM2HeJnvYVNQIi/view" target="_blank" variant="link">Sådan rydder du op i dine e-mails</Link></li>
-        <li><Link href="https://drive.google.com/file/d/1fN0bgV8R1WAirubd_1QlSH17lYHt6eE_/view" target="_blank" variant="link">Sådan rydder du op på din smart- phone og tablet</Link></li>
-        <li><Link href="https://docs.google.com/spreadsheets/d/1LvTHVLLRsCICSQ-FMwtqy1whl1PlQFKy/edit?gid=631660431#gid=631660431" target="_blank" variant="link">Deltagerdataindsamling 1</Link></li>
-        <li><Link href="https://docs.google.com/spreadsheets/d/1k56qMJsp3zgDhlsCngBhdjaSHP_z9TqM/edit?gid=464700726#gid=464700726" target="_blank" variant="link">Deltagerdataindsamling 2</Link></li>
-        <li><Link href="https://trello.com/b/YzROvY3M/digital-cleanup-day" target="_blank" variant="link">Markedsføringsmaterialer</Link></li>
-      </ul>
-    </div>
-    <div class="md:self-end"><Image class="w-56 md:w-96 m-auto pt-12" src={ressourcer} alt="" /></div>
-  </section>
-
-  <Image class="mt-28" src={footer_bg} alt="" />
-
-  <style>
-    .bg {
-      background-color: #d6c8b8;
-    }
-    .bg_2 {
-      background-color: #89a074;
-    }
-  </style>
 </MainLayout>
