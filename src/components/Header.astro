@@ -15,15 +15,15 @@ import Link from "./Link.astro";
 
     <!-- Desktop Menu -->
     <nav class="hidden lg:flex space-x-6 text-white font-semibold">
-      <a href="#digitalskrald" class="font-poetsen hover:text-green-800">Hvad er digital skrald</a>
+      <a href="#digitalskrald" class="font-poetsen hover:text-green-800">Hvad er digital skrald?</a>
       <a href="#vidstedu" class="font-poetsen hover:text-green-800">Vidste du at?</a>
-      <a href="#sådangørdu" class="font-poetsen hover:text-green-800">Sådan gør du?</a>
-      <a href="https://www.worldcleanupday.org/?gad_source=1&gclid=Cj0KCQjw9Km3BhDjARIsAGUb4nx7kGh11wWntSUOZOkMX5J3fn-X6GQb7mq_Q9WfTcwqOGbUISpOVe0aAp0hEALw_wcB" class="font-poetsen hover:text-green-800">World cleanup day</a>
+      <a href="#sådangørdu" class="font-poetsen hover:text-green-800">Sådan gør du!</a>
+      <a href="https://www.worldcleanupday.org/?gad_source=1&gclid=Cj0KCQjw9Km3BhDjARIsAGUb4nx7kGh11wWntSUOZOkMX5J3fn-X6GQb7mq_Q9WfTcwqOGbUISpOVe0aAp0hEALw_wcB" target="_blank" class="font-poetsen hover:text-green-800">World cleanup day</a>
     </nav>
 
     <!-- Button in the right side -->
     <div class="hidden lg:block">
-       <Link href="#Registrerbidrag" target="_blank" variant="button">Registrer dit bidrag</Link>
+      <Link href="#Registrerbidrag" target="_blank" variant="button">Registrer dit bidrag</Link>
     </div>
 
     <!-- Burger Menu Button (Visible on mobile) -->
@@ -35,11 +35,14 @@ import Link from "./Link.astro";
   </div>
 
   <!-- Mobile Menu (Visible when burger menu is clicked) -->
-  <div x-show="open" @click.away="open = false" class="lg:hidden bg-[#89A074] text-white font-semibold mt-4">
-    <a href="#" class="font-poetsen block px-4 py-2 hover:bg-green-800">Hvad er digital skrald</a>
-    <a href="#" class="font-poetsen block px-4 py-2 hover:bg-green-800">Vidste du at?</a>
-    <a href="#" class="font-poetsen block px-4 py-2 hover:bg-green-800">Sådan gør du?</a>
-    <a href="#" class="font-poetsen block px-4 py-2 hover:bg-green-800">World cleanup day</a>
-    <Link href="#Registrerbidrag" target="_blank" variant="button">Registrer dit bidrag</Link>
+
+  <div x-show="open" @click.away="open = false" class="lg:hidden bg-[#89A074] text-white font-semibold mt-4 text-right">
+    <a href="#digitalskrald" class="font-poetsen block px-4 py-2 hover:bg-[#89A474]">Hvad er digital skrald?</a>
+    <a href="#vidstedu" class="font-poetsen block px-4 py-2 hover:bg-[#89A474]">Vidste du at?</a>
+    <a href="#sådangørdu" class="font-poetsen block px-4 py-2 hover:bg-[#89A474]">Sådan gør du!</a>
+    <a href="https://www.worldcleanupday.org/?gad_source=1&gclid=Cj0KCQjw9Km3BhDjARIsAGUb4nx7kGh11wWntSUOZOkMX5J3fn-X6GQb7mq_Q9WfTcwqOGbUISpOVe0aAp0hEALw_wcB" target="_blank" class="font-poetsen block px-4 py-2 hover:bg-[#89A474]">World cleanup day</a>
+    <div class="my-6">
+      <Link href="#Registrerbidrag" target="_blank" variant="button">Registrer dit bidrag</Link>
+    </div>
   </div>
 </div>
