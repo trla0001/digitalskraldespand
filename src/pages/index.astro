@@ -17,7 +17,7 @@ import devider1 from "../assets/images/devider1.svg";
 import devider2 from "../assets/images/devider2.svg";
 ---
 
-<MainLayout title="Titel">
+<MainLayout title="Digitalskraldespand">
   <section class="grid md:grid-cols-2">
     <picture class="md:col-span-2">
       <source media="(min-width:780px)" srcset="/bg/menu_bg.svg" width="1920" />
@@ -33,7 +33,7 @@ import devider2 from "../assets/images/devider2.svg";
     </div>
   </section>
 
-  <section class="mt-28">
+  <section id="digitalskrald" class="mt-28">
     <div class="mx-5 lg:mx-[120px] grid md:grid-cols-2 lg:items-center">
       <Image class="w-56 lg:w-80 m-auto pb-4 lg:order-2" src={floejter} alt="" />
       <div>
@@ -44,7 +44,7 @@ import devider2 from "../assets/images/devider2.svg";
     <Image class="mt-28" src={devider1} alt="" />
   </section>
 
-  <section class="mt-28">
+  <section id="vidstedu" class="mt-28">
     <div class="mx-5 lg:mx-[120px] grid md:grid-cols-3 items-center">
       <Image class="w-56 lg:w-80 m-auto pb-4" src={peger} alt="" />
       <h2 class="pb-6 text-5xl">Vidste du at...</h2>
@@ -60,8 +60,8 @@ import devider2 from "../assets/images/devider2.svg";
   </section>
   <Image class="mt-28" src={devider2} alt="" />
 
-  <section class="mt-28">
-    <h2 class="mx-5 lg:mx-[120px] text-5xl">Hvordan gør du?</h2>
+  <section id="sådangørdu" class="mt-28">
+    <h2 class="mx-5 lg:mx-[120px] text-5xl">Sådan gør du?</h2>
     <article class="mx-5 lg:mx-[120px] mt-28 md:mt-4 grid md:grid-cols-2 md:items-center">
       <div class="md:order-2"><Image class="w-64 lg:w-80 ml-auto" src={mobil} alt="" /></div>
       <div>
@@ -96,7 +96,7 @@ import devider2 from "../assets/images/devider2.svg";
     <Image class="mt-28" src={devider1} alt="" />
   </section>
 
-  <section class="mt-28">
+  <section id="Inviter" class="mt-28">
     <div class="mx-5 lg:mx-[120px] grid md:grid-cols-2 md:items-center">
       <div>
         <h2 class="text-5xl pb-6">Inviter en ven</h2>
@@ -108,7 +108,7 @@ import devider2 from "../assets/images/devider2.svg";
     <Image class="mt-28" src={devider2} alt="" />
   </section>
 
-  <section class="mt-28">
+  <section id="Registrerbidrag" class="mt-28">
     <div class="mx-5 lg:mx-[120px] grid md:grid-cols-2">
       <div class="md:order-2 bg_2">
         <h2 class="text-5xl pb-6">Registrer dit bidrag</h2>
