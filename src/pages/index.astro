@@ -28,7 +28,7 @@ import devider2 from "../assets/images/devider2.svg";
       <article class="grid md:col-start-2 md:justify-center gap-3 text-center pt-4">
         <h1 class="text-5xl md:text-7xl">Digital Skraldedag</h1>
         <h2 class="text-4xl md:text-5xl">Den 15 marts 2025</h2>
-        <Link href="https://www.kea.dk" target="_blank">Registrer dit bidrag</Link>
+        <Link href="https://www.kea.dk" target="_blank" variant="button">Registrer dit bidrag</Link>
       </article>
     </div>
   </section>
@@ -144,11 +144,11 @@ import devider2 from "../assets/images/devider2.svg";
       <input type="number" placeholder="Mængde af skrald (GB)" class="block w-full bg rounded-md border-transparent focus:border-transparent focus:ring-black" /><br />
 
       <input type="checkbox" class="bg focus:border-transparent focus:ring-black" />
-      <label for="terms">*Jeg er enig med <a href="" class="underline">Let's Do It, World Terms and Conditions</a></label><br />
+      <label for="terms">*Jeg er enig med <Link href="#" variant="link">Let's Do It, World Terms and Conditions</Link></label><br />
 
       <input type="checkbox" class="bg focus:border-transparent focus:ring-black" />
       <label for="nyhedsbrev">Ja tak til nyhedsbrev</label><br />
-      <Button>Klik!</Button>
+      <Button variant="button">Registrer dit bidrag</Button>
     </form>
 
     <Image class="mt-28" src={devider1} alt="" />
@@ -159,16 +159,16 @@ import devider2 from "../assets/images/devider2.svg";
       <h2 class="text-5xl pb-6">Ressourcer og materialer</h2>
       <p>Her finder du vejledninger, værktøjer og materialer, der hjælper dig med at tage ansvar for din digitale oprydning. Uanset om du er enkeltperson, virksomhed, skole eller kommune, har vi samlet alt, du behøver for at reducere dit digitale fodaftryk og bidrage til en mere bæredygtig fremtid i nedstående links.</p>
       <ul class="pt-4">
-        <li><Link href="https://drive.google.com/file/d/1LZAIsGLSJl7fOdqdp53YscYc0XTd2xv3/view" target="_blank">Retningslinjer for enkeltpersoner</Link></li>
-        <li><Link href="https://drive.google.com/file/d/1ZUIJl_EztcJmYF7GVDFN1LMPRtqM_7nM/view" target="_blank">Retningslinjer for virksomheder</Link></li>
-        <li><Link href="https://drive.google.com/file/d/1dDw_YexhYGTxQIKMqcLMLnyekOTkTpJ0/view" target="_blank">Retningslinjer for skoler</Link></li>
-        <li><Link href="https://drive.google.com/file/d/1MRiPX57JrppZY4gwtKeKeCc0_rZX040P/view" target="_blank">Retningslinjer for kommuner</Link></li>
-        <li><Link href="https://drive.google.com/file/d/1i8rKagvbCXk4JciaEg896YUUti3bjLbU/view" target="_blank">Sådan rydder du op på din computer og i din Drive</Link></li>
-        <li><Link href="https://drive.google.com/file/d/1Capnwt-idzQoVtV1jNTM2HeJnvYVNQIi/view" target="_blank">Sådan rydder du op i dine e-mails</Link></li>
-        <li><Link href="https://drive.google.com/file/d/1fN0bgV8R1WAirubd_1QlSH17lYHt6eE_/view" target="_blank">Sådan rydder du op på din smart- phone og tablet</Link></li>
-        <li><Link href="https://docs.google.com/spreadsheets/d/1LvTHVLLRsCICSQ-FMwtqy1whl1PlQFKy/edit?gid=631660431#gid=631660431" target="_blank">Deltagerdataindsamling 1</Link></li>
-        <li><Link href="https://docs.google.com/spreadsheets/d/1k56qMJsp3zgDhlsCngBhdjaSHP_z9TqM/edit?gid=464700726#gid=464700726" target="_blank">Deltagerdataindsamling 2</Link></li>
-        <li><Link href="https://trello.com/b/YzROvY3M/digital-cleanup-day" target="_blank">Markedsføringsmaterialer</Link></li>
+        <li><Link href="https://drive.google.com/file/d/1LZAIsGLSJl7fOdqdp53YscYc0XTd2xv3/view" target="_blank" variant="link">Retningslinjer for enkeltpersoner</Link></li>
+        <li><Link href="https://drive.google.com/file/d/1ZUIJl_EztcJmYF7GVDFN1LMPRtqM_7nM/view" target="_blank" variant="link">Retningslinjer for virksomheder</Link></li>
+        <li><Link href="https://drive.google.com/file/d/1dDw_YexhYGTxQIKMqcLMLnyekOTkTpJ0/view" target="_blank" variant="link">Retningslinjer for skoler</Link></li>
+        <li><Link href="https://drive.google.com/file/d/1MRiPX57JrppZY4gwtKeKeCc0_rZX040P/view" target="_blank" variant="link">Retningslinjer for kommuner</Link></li>
+        <li><Link href="https://drive.google.com/file/d/1i8rKagvbCXk4JciaEg896YUUti3bjLbU/view" target="_blank" variant="link">Sådan rydder du op på din computer og i din Drive</Link></li>
+        <li><Link href="https://drive.google.com/file/d/1Capnwt-idzQoVtV1jNTM2HeJnvYVNQIi/view" target="_blank" variant="link">Sådan rydder du op i dine e-mails</Link></li>
+        <li><Link href="https://drive.google.com/file/d/1fN0bgV8R1WAirubd_1QlSH17lYHt6eE_/view" target="_blank" variant="link">Sådan rydder du op på din smart- phone og tablet</Link></li>
+        <li><Link href="https://docs.google.com/spreadsheets/d/1LvTHVLLRsCICSQ-FMwtqy1whl1PlQFKy/edit?gid=631660431#gid=631660431" target="_blank" variant="link">Deltagerdataindsamling 1</Link></li>
+        <li><Link href="https://docs.google.com/spreadsheets/d/1k56qMJsp3zgDhlsCngBhdjaSHP_z9TqM/edit?gid=464700726#gid=464700726" target="_blank" variant="link">Deltagerdataindsamling 2</Link></li>
+        <li><Link href="https://trello.com/b/YzROvY3M/digital-cleanup-day" target="_blank" variant="link">Markedsføringsmaterialer</Link></li>
       </ul>
     </div>
     <div class="md:self-end"><Image class="w-56 md:w-96 m-auto pt-12" src={ressourcer} alt="" /></div>
