@@ -28,7 +28,7 @@ import devider2 from "../assets/images/devider2.svg";
       <article class="grid md:col-start-2 md:justify-center gap-3 text-center pt-4">
         <h1 class="text-5xl md:text-7xl font-poetsen">Digital Skraldedag</h1>
         <h2 class="text-4xl md:text-5xl font-poetsen">Den 15 marts 2025</h2>
-        <Link href="#registrerbidrag" target="_blank" variant="button">Registrer dit bidrag</Link>
+        <div class="flex justify-center"><Link href="#registrerbidrag" target="_blank" variant="button">Registrer dit bidrag</Link></div>
       </article>
     </div>
   </section>
@@ -119,7 +119,7 @@ import devider2 from "../assets/images/devider2.svg";
     </div>
 
     <form action="" class="mx-5 lg:mx-[220px]">
-      <div class="grid md:justify-end">
+      <div class="grid md:justify-end mb-2">
         <label for=" name"></label><br />
         <select name="liste" class="block md:w-[404px] bg rounded-md focus:border-transparent focus:ring-black">
           <option value="">Land</option>
@@ -132,23 +132,27 @@ import devider2 from "../assets/images/devider2.svg";
       </div>
 
       <label for="name"></label>
-      <input type="text" placeholder="Fuldenavn" class="block w-full bg rounded-md border-transparent focus:border-transparent focus:ring-black" /><br />
+      <input type="text" placeholder="Fuldenavn" class="block w-full bg rounded-md focus:border-transparent focus:ring-black placeholder-neutral-700" /><br />
 
       <label for="email"></label>
-      <input type="text" placeholder="E-mail" class="block w-full bg rounded-md border-transparent focus:border-transparent focus:ring-black" /><br />
+      <input type="text" placeholder="E-mail" class="block w-full bg rounded-md focus:border-transparent focus:ring-black placeholder-neutral-700" /><br />
 
       <label for="antal"></label>
-      <input type="number" placeholder="Antal deltagere" class="block w-full bg rounded-md border-transparent focus:border-transparent focus:ring-black" /><br />
+      <input type="number" placeholder="Antal deltagere" class="block w-full bg rounded-md focus:border-transparent focus:ring-black placeholder-neutral-700" /><br />
 
       <label for="mængde"></label>
-      <input type="number" placeholder="Mængde af skrald (GB)" class="block w-full bg rounded-md border-transparent focus:border-transparent focus:ring-black" /><br />
+      <input type="number" placeholder="Mængde af skrald (GB)" class="block w-full bg rounded-md focus:border-transparent focus:ring-black placeholder-neutral-700" /><br />
 
-      <input type="checkbox" class="bg focus:border-transparent focus:ring-black" />
-      <label for="terms">*Jeg er enig med <Link href="#" variant="link">Let's Do It, World Terms and Conditions</Link></label><br />
+      <div class="mb-2">
+        <input type="checkbox" class="bg focus:border-transparent focus:ring-black" />
+        <label for="terms">*Jeg er enig med <Link href="#" variant="link">Let's Do It, World Terms and Conditions</Link></label><br />
+      </div>
 
-      <input type="checkbox" class="bg focus:border-transparent focus:ring-black" />
-      <label for="nyhedsbrev">Ja tak til nyhedsbrev</label><br />
-      <Button variant="button">Registrer dit bidrag</Button>
+      <div class="mb-8">
+        <input type="checkbox" class="bg focus:border-transparent focus:ring-black" />
+        <label for="nyhedsbrev">Ja tak til nyhedsbrev</label><br />
+      </div>
+      <div class="flex justify-center"><Button variant="button">Registrer dit bidrag</Button></div>
     </form>
   </section>
   <Image class="mt-28" src={devider1} alt="" />
