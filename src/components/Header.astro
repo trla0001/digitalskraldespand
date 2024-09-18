@@ -1,5 +1,44 @@
 ---
+import { Image } from "astro:assets";
+import skralde_logobaggrund from "../assets/images/skralde_logobaggrund.webp";
 ---
-<div>
-Header - tilføj navigation mm.
+
+<div x-data="{ open: false }" class="fixed top-0 left-0 w-full bg-[#89A074] text-white z-50 p-4">
+  <!-- Navbar container -->
+  <div class="container mx-auto flex items-center justify-between">
+    <!-- Logo Section -->
+
+    <a href="#">
+      <Image src={skralde_logobaggrund} alt="" class="h-[70px] w-auto" />
+    </a>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden lg:flex space-x-6 text-white font-semibold">
+      <a href="#" class="hover:text-green-800">Hvad er digital skrald</a>
+      <a href="#" class="hover:text-green-800">Vidste du at?</a>
+      <a href="#" class="hover:text-green-800">Sådan gør du?</a>
+      <a href="#" class="hover:text-green-800">World cleanup day</a>
+    </nav>
+
+    <!-- Button in the right side -->
+    <div class="hidden lg:block">
+      <button class="bg-white text-[#89A074] px-4 py-2 rounded font-bold hover:bg-gray-200">Registrer dit bidrag</button>
+    </div>
+
+    <!-- Burger Menu Button (Visible on mobile) -->
+    <button @click="open = !open" class="lg:hidden text-white focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu (Visible when burger menu is clicked) -->
+  <div x-show="open" @click.away="open = false" class="lg:hidden bg-[#89A074] text-white font-semibold mt-4">
+    <a href="#" class="block px-4 py-2 hover:bg-green-800">Hvad er digital skrald</a>
+    <a href="#" class="block px-4 py-2 hover:bg-green-800">Vidste du at?</a>
+    <a href="#" class="block px-4 py-2 hover:bg-green-800">Sådan gør du?</a>
+    <a href="#" class="block px-4 py-2 hover:bg-green-800">World cleanup day</a>
+    <button class="block w-full text-left px-4 py-2 mt-4 bg-white text-yellow-500 font-bold hover:bg-gray-200">Registrer dit bidrag</button>
+  </div>
 </div>
