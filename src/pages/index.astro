@@ -18,7 +18,7 @@ import devider2 from "../assets/images/devider2.webp";
 ---
 
 <MainLayout title="Digitalskraldespand">
-  <section class="grid md:grid-cols-2 mt-24">
+  <section id="hero" class="grid md:grid-cols-2 mt-24">
     <picture class="md:col-span-2">
       <source media="(min-width:780px)" srcset="/bg/menu_bg.webp" width="1920" />
       <img src="/bg/mobile_menu_bg.webp" alt="" width="790" height="850" />
@@ -158,10 +158,9 @@ import devider2 from "../assets/images/devider2.webp";
       <div class="flex justify-center"><Button variant="button">Registrer dit bidrag</Button></div>
     </form>
   </section>
-
   <Image class="mt-28" src={devider1} alt="" />
 
-  <section class="max-w-7xl m-auto mt-28 mx-5 lg:mx-[120px] grid md:grid-cols-2">
+  <section id="ressourcer" class="max-w-7xl m-auto mt-28 mx-5 lg:mx-[120px] grid md:grid-cols-2">
     <div>
       <h2 class="text-5xl pb-6 font-poetsen">Ressourcer og materialer</h2>
       <p>Her finder du vejledninger, værktøjer og materialer, der hjælper dig med at tage ansvar for din digitale oprydning. Uanset om du er enkeltperson, virksomhed, skole eller kommune, har vi samlet alt, du behøver for at reducere dit digitale fodaftryk og bidrage til en mere bæredygtig fremtid i nedstående links.</p>
@@ -180,7 +179,6 @@ import devider2 from "../assets/images/devider2.webp";
     </div>
     <div class="md:self-end"><Image class="w-56 md:w-96 m-auto pt-12" src={ps_ven_uden_flag} alt="" /></div>
   </section>
-
   <Image class="mt-28" src={footer_bg} alt="" />
 </MainLayout>
 
@@ -193,37 +191,37 @@ import devider2 from "../assets/images/devider2.webp";
 <script>
   import { inView } from "motion";
 
-  const inviewelementet = document.querySelector(".bog_img");
+  const inviewelementet = document.querySelector("#hero");
   inView(inviewelementet, () => {
     inviewelementet.classList.add("fade-in-bottom");
   });
 
-  const inviewelementet2 = document.querySelector(".om_bog");
+  const inviewelementet2 = document.querySelector("#digitalskrald");
   inView(inviewelementet2, () => {
     inviewelementet2.classList.add("fade-in-bottom");
   });
 
-  const inviewelementet3 = document.querySelector(".bog_kap");
+  const inviewelementet3 = document.querySelector("#vidstedu");
   inView(inviewelementet3, () => {
     inviewelementet3.classList.add("fade-in-bottom");
   });
 
-  const inviewelementet4 = document.querySelector(".anmeldelser");
+  const inviewelementet4 = document.querySelector("#sådangørdu");
   inView(inviewelementet4, () => {
     inviewelementet4.classList.add("fade-in-bottom");
   });
 
-  const inviewelementet5 = document.querySelector(".galleri");
+  const inviewelementet5 = document.querySelector("#Inviter");
   inView(inviewelementet5, () => {
     inviewelementet5.classList.add("fade-in-bottom");
   });
 
-  const inviewelementet6 = document.querySelector(".om_forfatter");
+  const inviewelementet6 = document.querySelector("#Registrerbidrag");
   inView(inviewelementet6, () => {
     inviewelementet6.classList.add("fade-in-bottom");
   });
 
-  const inviewelementet7 = document.querySelector(".formular");
+  const inviewelementet7 = document.querySelector("#ressourcer");
   inView(inviewelementet7, () => {
     inviewelementet7.classList.add("fade-in-bottom");
   });
