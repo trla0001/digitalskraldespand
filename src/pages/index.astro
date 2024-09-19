@@ -32,8 +32,9 @@ import devider2 from "../assets/images/devider2.webp";
       </article>
     </div>
   </section>
+  <section id="digitalskrald"></section>
 
-  <section id="digitalskrald" class="max-w-7xl m-auto mt-28">
+  <section class="max-w-7xl m-auto mt-28 .digitalskrald">
     <div class="mx-5 lg:mx-[120px] grid md:grid-cols-2 lg:items-center">
       <Image class="w-56 lg:w-80 m-auto pb-4 lg:order-2" src={ps_rydder_op} alt="" />
       <div>
@@ -43,8 +44,9 @@ import devider2 from "../assets/images/devider2.webp";
     </div>
   </section>
   <Image class="mt-28" src={devider1} alt="" />
+  <section id="vidstedu"></section>
 
-  <section id="vidstedu" class="max-w-7xl m-auto mt-28">
+  <section class="max-w-7xl m-auto mt-28 .vidstedu">
     <div class="mx-5 lg:mx-[120px] grid md:grid-cols-3 items-center">
       <Image class="w-56 lg:w-80 m-auto pb-4" src={ps_peger} alt="" />
       <h2 class="pb-6 text-5xl font-poetsen">Vidste du at...</h2>
@@ -59,8 +61,9 @@ import devider2 from "../assets/images/devider2.webp";
     </ul>
   </section>
   <Image class="mt-28" src={devider2} alt="" />
+  <section id="sådangørdu"></section>
 
-  <section id="sådangørdu" class="max-w-7xl m-auto mt-28">
+  <section class="max-w-7xl m-auto mt-28 .sådangørdu">
     <h2 class="mx-5 lg:mx-[120px] text-5xl font-poetsen">Sådan gør du!</h2>
     <article class="mx-5 lg:mx-[120px] mt-28 md:mt-4 grid md:grid-cols-2 md:items-center">
       <div class="md:order-2"><Image class="w-64 lg:w-80 ml-auto" src={ps_telefon} alt="" /></div>
@@ -107,8 +110,9 @@ import devider2 from "../assets/images/devider2.webp";
     </div>
   </section>
   <Image class="mt-28" src={devider2} alt="" />
+  <section id="Registrerbidrag"></section>
 
-  <section id="Registrerbidrag" class="max-w-7xl m-auto mt-28">
+  <section class="max-w-7xl m-auto mt-28 .Registrerbidrag">
     <div class="mx-5 lg:mx-[120px] grid md:grid-cols-2">
       <div class="md:order-2">
         <picture class="md:col-span-2">
@@ -191,17 +195,17 @@ import devider2 from "../assets/images/devider2.webp";
 <script>
   import { inView } from "motion";
 
-  const inviewelementet2 = document.querySelector("#digitalskrald");
+  const inviewelementet2 = document.querySelector(".digitalskrald");
   inView(inviewelementet2, () => {
     inviewelementet2.classList.add("fade-in-bottom");
   });
 
-  const inviewelementet3 = document.querySelector("#vidstedu");
+  const inviewelementet3 = document.querySelector(".vidstedu");
   inView(inviewelementet3, () => {
     inviewelementet3.classList.add("fade-in-bottom");
   });
 
-  const inviewelementet4 = document.querySelector("#sådangørdu");
+  const inviewelementet4 = document.querySelector(".sådangørdu");
   inView(inviewelementet4, () => {
     inviewelementet4.classList.add("fade-in-bottom");
   });
@@ -211,7 +215,7 @@ import devider2 from "../assets/images/devider2.webp";
     inviewelementet5.classList.add("fade-in-bottom");
   });
 
-  const inviewelementet6 = document.querySelector("#Registrerbidrag");
+  const inviewelementet6 = document.querySelector(".Registrerbidrag");
   inView(inviewelementet6, () => {
     inviewelementet6.classList.add("fade-in-bottom");
   });
