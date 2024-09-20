@@ -4,7 +4,7 @@ import logo_trash from "../assets/images/logo_trash.webp";
 import Link from "./Link.astro";
 ---
 
-<div x-data="{ open: false }" class="fixed top-0 left-0 w-full bg-[#89A074] text-white z-50 p-4">
+<div x-data="{ open: false }" class="fixed top-0 left-0 w-full bg-[#89A074] text-black z-50 p-4">
   <!-- Navbar container -->
   <div class="container mx-auto flex items-center justify-between">
     <!-- Logo Section -->
@@ -14,7 +14,7 @@ import Link from "./Link.astro";
     </a>
 
     <!-- Desktop Menu -->
-    <nav class="hidden lg:flex space-x-6 text-white font-semibold">
+    <nav class="hidden lg:flex space-x-6 text-black font-semibold">
       <a href="#digitalskrald" class="font-poetsen hover:text-green-800">Hvad er digital skrald?</a>
       <a href="#vidstedu" class="font-poetsen hover:text-green-800">Vidste du at?</a>
       <a href="#sådangørdu" class="font-poetsen hover:text-green-800">Sådan gør du!</a>
@@ -27,7 +27,7 @@ import Link from "./Link.astro";
     </div>
 
     <!-- Burger Menu Button (Visible on mobile) -->
-    <button @click="open = !open" class="lg:hidden text-white focus:outline-none">
+    <button @click="open = !open" class="lg:hidden text-black focus:outline-none">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
       </svg>
@@ -36,7 +36,7 @@ import Link from "./Link.astro";
 
   <!-- Mobile Menu (Visible when burger menu is clicked) -->
 
-  <div x-show="open" @click.away="open = false" class="lg:hidden bg-[#89A074] text-white font-semibold mt-4 text-right">
+  <div x-show="open" @click.away="open = false" class="lg:hidden bg-[#89A074] text-black font-semibold mt-4 text-right">
     <a href="#digitalskrald" class="font-poetsen block px-4 py-2 hover:bg-[#89A474]">Hvad er digital skrald?</a>
     <a href="#vidstedu" class="font-poetsen block px-4 py-2 hover:bg-[#89A474]">Vidste du at?</a>
     <a href="#sådangørdu" class="font-poetsen block px-4 py-2 hover:bg-[#89A474]">Sådan gør du!</a>
