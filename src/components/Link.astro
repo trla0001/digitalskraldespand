@@ -1,12 +1,11 @@
 ---
 // Henter parametrene fra Astro.props
-const { href="#", target = "_self", variant = "textlink"} = Astro.props; 
+const { href = "#", target = "_self", variant = "textlink" } = Astro.props;
 
-const varaiantClasses= {
-    button: "font-poetsen bg-[#2C621F] text-[#EBE4DC] no-underline px-6 py-3 text-lg rounded-full inline-block transition-colors duration-300 ease-in-out hover:bg-[#5DBF45] active:bg-[#1C4214]",
-    link: "font-poetsen text-[#2C621F] underline transition-colors duration-300 ease-in-out hover:text-[#5DBF45] active:text-[#1C4214]",
-}
+const varaiantClasses = {
+  button: "font-poetsen bg-[#2C621F] text-white no-underline px-6 py-3 text-lg rounded-full inline-block transition-colors duration-300 ease-in-out hover:bg-[#5DBF45] active:bg-[#1C4214]",
+  link: "font-poetsen text-[#2C621F] underline transition-colors duration-300 ease-in-out hover:text-[#5DBF45] active:text-[#1C4214]",
+};
 ---
+
 <a href={href} class="underline" target={target} class:list={[varaiantClasses[variant]]}><slot /></a>
-
-
